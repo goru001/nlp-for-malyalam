@@ -1,0 +1,13 @@
+classification/.ipynb_checkpoints/*
+classification/models/*
+classification/tmp/*
+classification/Malyalam_News_Classification.csv
+datasets-preparation/.ipynb_checkpoints/*
+datasets-preparation/all_malyalam_wikipedia_links.pkl
+datasets-preparation/geckodriver.log
+language-model/.ipynb_checkpoints
+language-model/MalyalamDataset/*
+language-model/MalyalamWikipediaArticles/*
+tokenizer/.ipynb_checkpoints/*
+tokenizer/malyalam_lm.model
+tokenizer/malyalam_lm.vocab
