@@ -1,30 +1,48 @@
-# NLP for Malyalam
+# NLP for Malayalam
 
-This repository contains State of the Art Tokenizer, Language model
- and Classifier for Malyalam, which is spoken by the Malayali people 
+This repository contains State of the Art Language models
+ and Classifier for Malayalam, which is spoken by the Malayali people 
   in the Indian state of Kerala and the union territories of
    Lakshadweep and Puducherry.
+   
+The models trained here have been used in [Natural Language Toolkit for Indic Languages
+ (iNLTK)](https://github.com/goru001/inltk)
 
 ## Dataset
 
-* Download [Malyalam Wikipedia Articles Dataset](https://drive.google.com/open?id=1MRnh9Z7FNTVgehvlS2BfG_pSh_9ccs47) (12,388 articles) which I scraped, cleaned and
-used to train the language model
+#### Created as part of this project
 
-* Download [Malyalam News classification Dataset](https://drive.google.com/open?id=14KpsL36GkEIhsW8injS4GiAexN-1Khrg) which I scraped and used to train 
-the classifier
+1. [Malayalam Wikipedia Articles](https://www.kaggle.com/disisbig/malayalam-wikipedia-articles)
+
+2. [Malayalam News Dataset](https://www.kaggle.com/disisbig/malyalam-news-dataset)
 
 ## Results
 
-#### Language Model
+#### Language Model Perplexity
 
-`on 30% validation set`
+| Architecture/Dataset | Malayalam Wikipedia Articles |
+|:--------:|:----:|
+|   ULMFiT  |  26.39  |
+|  TransformerXL |  25.79  |
 
-* Perplexity of language model: ~26
 
-#### Classifier
+#### Classification Metrics
 
-* Accuracy of classification model: ~94%
-* Kappa score of classification model: ~91
+##### ULMFiT
+
+| Dataset | Accuracy | Kappa Score |
+|:--------:|:----:|:----:|
+| Malayalam News Dataset |  94.36  |  91.54  |
+
+
+#### Visualizations
+ 
+##### Embedding Space
+
+| Architecture | Visualization |
+|:--------:|:----:|
+| ULMFiT | [Embeddings projection](https://projector.tensorflow.org/?config=https://raw.githubusercontent.com/goru001/nlp-for-malyalam/master/language-model/embedding_projector_config.json) |
+| TransformerXL | [Embeddings projection](https://projector.tensorflow.org/?config=https://raw.githubusercontent.com/goru001/nlp-for-malyalam/master/language-model/embedding_projector_transformer_config.json)  |
 
 ## Pretrained Language Model
 

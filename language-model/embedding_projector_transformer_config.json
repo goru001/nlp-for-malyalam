@@ -1,0 +1,13 @@
+{
+  "embeddings": [
+    {
+      "tensorName": "Malayalam Embedding Vectors - TransformerXL",
+      "tensorShape": [
+        10000,
+        410
+      ],
+      "tensorPath": "https://media.githubusercontent.com/media/goru001/nlp-for-malyalam/master/language-model/embeddings_transformer.tsv",
+      "metadataPath": "https://media.githubusercontent.com/media/goru001/nlp-for-malyalam/master/language-model/embeddings_transformer_metadata.tsv"
+    }
+  ]
+}

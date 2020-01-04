@@ -1,7 +1,7 @@
 {
   "embeddings": [
     {
-      "tensorName": "Malayalam Embedding Vectors",
+      "tensorName": "Malayalam Embedding Vectors - ULMFiT",
       "tensorShape": [
         10000,
         400
